@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Μαθητικές Ιστορίες | Νέοι & Νέα</title>
+
+    <meta name="description"
+          content="Εμπνευσμένες ιστορίες από μαθητές σε όλη την Ελλάδα και τον κόσμο. Ιδέες, δημιουργία, προσπάθεια και επιτυχίες.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <span class="logo-main">Νέοι & Νέα</span>
+                <span class="logo-subtitle">Ιστορίες από τη νέα γενιά</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+
+                <a href="mathtikes-istories.html" class="active">
+                    Μαθητικές Ιστορίες
+                </a>
+
+                <a href="foititikes-istories.html">
+                    Φοιτητικές Ιστορίες
+                </a>
+
+                <a href="istories-apo-ton-kosmo.html">
+                    Από τον Κόσμο
+                </a>
+
+                <a href="ekpaideftika-nea.html">
+                    Εκπαιδευτικά Νέα
+                </a>
+
+                <a href="epikoinonia.html">
+                    Επικοινωνία
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             PAGE INTRO
+        ========================== -->
+
+        <section class="page-intro">
+
+            <div class="page-intro-inner">
+
+                <p class="eyebrow">ΜΑΘΗΤΕΣ</p>
+
+                <h1>
+                    Μαθητικές<br>
+                    <span>Ιστορίες.</span>
+                </h1>
+
+                <p class="page-intro-description">
+                    Ιστορίες μαθητών που δημιουργούν, προσπαθούν,
+                    ξεπερνούν εμπόδια και κάνουν πράγματα
+                    που αξίζει να γνωρίζουμε.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURED STORY
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">ΞΕΧΩΡΙΖΟΥΜΕ</p>
+                    <h2>Μια ιστορία που αξίζει να διαβάσεις</h2>
+                </div>
+
+            </div>
+
+
+            <article class="featured-story">
+
+                <div class="featured-image">
+
+                    <div class="image-placeholder">
+                        ΦΩΤΟΓΡΑΦΙΑ
+                    </div>
+
+                </div>
+
+
+                <div class="featured-content">
+
+                    <p class="category">
+                        ΜΑΘΗΤΙΚΗ ΙΣΤΟΡΙΑ
+                    </p>
+
+                    <h3>
+                        Οι μαθητές που αποφάσισαν
+                        να μετατρέψουν μια ιδέα
+                        σε πραγματικότητα
+                    </h3>
+
+                    <p>
+                        Μια ομάδα μαθητών ξεκίνησε με μια απλή ιδέα.
+                        Με πολλή δουλειά, συνεργασία και επιμονή,
+                        η ιδέα αυτή πήρε μορφή και έφτασε πολύ
+                        πιο μακριά από όσο περίμεναν.
+                    </p>
+
+                    <a href="stories/example.html" class="text-link">
+                        Διάβασε την ιστορία →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             ALL STORIES
+        ========================== -->
+
+        <section class="section stories-archive">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">ΑΡΧΕΙΟ</p>
+                    <h2>Όλες οι μαθητικές ιστορίες</h2>
+                </div>
+
+            </div>
+
+
+            <div class="story-grid">
+
+
+                <!-- STORY 1 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΔΗΜΙΟΥΡΓΙΑ
+                        </p>
+
+                        <h3>
+                            Μια ομάδα μαθητών
+                            με μια ξεχωριστή ιδέα
+                        </h3>
+
+                        <p>
+                            Πώς μια σχολική ομάδα αποφάσισε
+                            να δημιουργήσει κάτι από την αρχή.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 2 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΔΙΑΓΩΝΙΣΜΟΙ
+                        </p>
+
+                        <h3>
+                            Από το σχολείο
+                            σε έναν διεθνή διαγωνισμό
+                        </h3>
+
+                        <p>
+                            Η προσπάθεια μιας μαθητικής ομάδας
+                            που κατάφερε να φτάσει μέχρι το εξωτερικό.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 3 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΤΕΧΝΟΛΟΓΙΑ
+                        </p>
+
+                        <h3>
+                            Όταν μια σχολική ιδέα
+                            γίνεται πραγματικότητα
+                        </h3>
+
+                        <p>
+                            Μαθητές χρησιμοποιούν την τεχνολογία
+                            για να λύσουν ένα πραγματικό πρόβλημα.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 4 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΚΟΙΝΩΝΙΑ
+                        </p>
+
+                        <h3>
+                            Μαθητές που θέλησαν
+                            να βοηθήσουν την κοινότητά τους
+                        </h3>
+
+                        <p>
+                            Μια ομάδα μαθητών αποφάσισε να κάνει
+                            κάτι μικρό που είχε μεγάλο αντίκτυπο.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 5 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΕΠΙΣΤΗΜΗ
+                        </p>
+
+                        <h3>
+                            Η σχολική εργασία
+                            που έγινε κάτι περισσότερο
+                        </h3>
+
+                        <p>
+                            Πώς ένα project για το σχολείο
+                            εξελίχθηκε σε μια μεγαλύτερη προσπάθεια.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 6 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΤΕΧΝΕΣ
+                        </p>
+
+                        <h3>
+                            Ένα μαθητικό έργο
+                            που ταξίδεψε μακριά
+                        </h3>
+
+                        <p>
+                            Μια ιστορία για τη δημιουργικότητα,
+                            την τέχνη και την επιμονή.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 7 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΑΘΛΗΤΙΣΜΟΣ
+                        </p>
+
+                        <h3>
+                            Η προσπάθεια που
+                            δεν σταμάτησε στην πρώτη αποτυχία
+                        </h3>
+
+                        <p>
+                            Μια μαθητική διαδρομή γεμάτη
+                            προσπάθεια, αποτυχίες και επιμονή.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 8 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΠΕΡΙΒΑΛΛΟΝ
+                        </p>
+
+                        <h3>
+                            Μαθητές που αποφάσισαν
+                            να αλλάξουν το σχολείο τους
+                        </h3>
+
+                        <p>
+                            Μια περιβαλλοντική πρωτοβουλία
+                            που ξεκίνησε από μια σχολική αυλή.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STORY 9 -->
+
+                <article class="story-card">
+
+                    <a href="stories/example.html">
+
+                        <div class="card-image">
+                            ΦΩΤΟΓΡΑΦΙΑ
+                        </div>
+
+                    </a>
+
+                    <div class="card-content">
+
+                        <p class="category">
+                            ΕΘΕΛΟΝΤΙΣΜΟΣ
+                        </p>
+
+                        <h3>
+                            Όταν οι μαθητές
+                            αποφασίζουν να προσφέρουν
+                        </h3>
+
+                        <p>
+                            Μια μαθητική πρωτοβουλία
+                            που ξεκίνησε από την ανάγκη να βοηθήσουν.
+                        </p>
+
+                        <a href="stories/example.html"
+                           class="text-link">
+                            Διάβασε περισσότερα →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SUBMIT STORY
+        ========================== -->
+
+        <section class="submit-section">
+
+            <div class="submit-inner">
+
+                <p class="eyebrow">
+                    ΓΝΩΡΙΖΕΙΣ ΜΙΑ ΕΝΔΙΑΦΕΡΟΥΣΑ ΙΣΤΟΡΙΑ;
+                </p>
+
+                <h2>
+                    Μίλησέ μας<br>
+                    γι' αυτήν.
+                </h2>
+
+                <p>
+                    Γνωρίζεις έναν μαθητή, μια ομάδα ή μια
+                    σχολική πρωτοβουλία που αξίζει να γνωρίσουν
+                    περισσότεροι άνθρωποι;
+                </p>
+
+                <a href="epikoinonia.html"
+                   class="button button-light">
+                    Στείλε μας την ιστορία
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <a href="index.html"
+                   class="logo footer-logo">
+
+                    <span class="logo-main">
+                        Νέοι & Νέα
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Ιστορίες από τη νέα γενιά
+                    </span>
+
+                </a>
+
+                <p>
+                    Ιστορίες, ιδέες και νέα
+                    από μαθητές και φοιτητές.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Περιήγηση</h3>
+
+                <a href="mathtikes-istories.html">
+                    Μαθητικές Ιστορίες
+                </a>
+
+                <a href="foititikes-istories.html">
+                    Φοιτητικές Ιστορίες
+                </a>
+
+                <a href="istories-apo-ton-kosmo.html">
+                    Ιστορίες από τον Κόσμο
+                </a>
+
+                <a href="ekpaideftika-nea.html">
+                    Εκπαιδευτικά Νέα
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Επικοινωνία</h3>
+
+                <a href="epikoinonia.html">
+                    Στείλε μια ιστορία
+                </a>
+
+                <a href="mailto:neokaineα@gmail.com">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Νέοι & Νέα. Με επιφύλαξη παντός δικαιώματος.
+            </p>
+
+            <p>
+                Ένα ανεξάρτητο μαθητικό & φοιτητικό project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
+
