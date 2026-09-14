@@ -38,7 +38,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -59,7 +59,7 @@ img {
 
 .header-inner {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 20px 30px;
 
@@ -139,7 +139,7 @@ img {
 
 
 /* =========================================
-   3. TYPOGRAPHY / SMALL LABELS
+   3. SMALL LABELS
 ========================================= */
 
 .eyebrow {
@@ -239,7 +239,7 @@ img {
 }
 
 .hero-content {
-    width: 1300px;
+    width: 1350px;
     max-width: calc(100% - 60px);
 
     margin: 0 auto;
@@ -275,7 +275,7 @@ img {
 ========================================= */
 
 .section {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 100px 30px;
 }
@@ -287,8 +287,8 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;
 
-    padding-left: max(30px, calc((100% - 1140px) / 2));
-    padding-right: max(30px, calc((100% - 1140px) / 2));
+    padding-left: max(30px, calc((100% - 1290px) / 2));
+    padding-right: max(30px, calc((100% - 1290px) / 2));
 }
 
 .section-heading {
@@ -335,28 +335,48 @@ img {
 ========================================= */
 
 .page-hero {
-    padding: 85px 0 75px;
+    padding: 75px 0;
     border-bottom: 1px solid #deddd7;
 }
 
-.page-hero .container {
-    max-width: 1050px;
+.page-hero-inner {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.page-hero-content {
+    max-width: 700px;
+}
+
+.page-hero .eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #b03a2e;
+    margin-bottom: 18px;
 }
 
 .page-hero h1 {
-    max-width: 900px;
-
-    margin: 18px 0 25px;
+    margin: 0 0 25px;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 5vw, 64px);
+    font-size: clamp(42px, 4.5vw, 62px);
     font-weight: normal;
     line-height: 1.08;
     letter-spacing: -2px;
 }
 
 .page-intro {
-    max-width: 620px;
+    max-width: 600px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -364,27 +384,60 @@ img {
     color: #555;
 }
 
-.page-hero .eyebrow {
-    font-size: 12px;
-    margin-bottom: 0;
+
+/* Hero image */
+
+.page-hero-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+
+.page-hero-image .image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dedbd3,
+            #c9c5bb
+        );
+
+    color: #777;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
 }
 
 
 /* =========================================
-   8. OLDER PAGE-INTRO COMPATIBILITY
+   8. OLD PAGE-INTRO COMPATIBILITY
 ========================================= */
 
 .page-intro-inner {
-    max-width: 1050px;
+    max-width: 1350px;
     margin: 0 auto;
-    padding: 85px 30px 75px;
+    padding: 75px 30px;
+}
+
+.page-intro-inner {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 70px;
+    align-items: center;
 }
 
 .page-intro h1 {
-    max-width: 900px;
+    max-width: 700px;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(42px, 5vw, 64px);
+    font-size: clamp(42px, 4.5vw, 62px);
     font-weight: normal;
     line-height: 1.08;
     letter-spacing: -2px;
@@ -397,7 +450,7 @@ img {
 }
 
 .page-intro-description {
-    max-width: 620px;
+    max-width: 600px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -509,7 +562,7 @@ img {
 
 .story-grid {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 
     display: grid;
@@ -633,7 +686,7 @@ img {
 
 .stories-section .section-heading,
 .topics-section .section-heading {
-    max-width: 1200px;
+    max-width: 1350px;
     margin-left: auto;
     margin-right: auto;
 
@@ -653,7 +706,7 @@ img {
 
 .topics-grid {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 50px auto 0;
 
     display: grid;
@@ -769,7 +822,7 @@ img {
 
 .contact-grid {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 
     display: grid;
@@ -893,7 +946,7 @@ img {
 }
 
 .footer-inner {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 70px 30px;
 
@@ -946,7 +999,7 @@ img {
 }
 
 .footer-bottom {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 
     padding: 20px 30px 30px;
@@ -1004,18 +1057,28 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .page-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .page-hero-content {
+        max-width: 800px;
+    }
+
+    .page-hero-image {
+        max-width: 700px;
+    }
+
+    .page-intro-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
     .footer-inner {
         grid-template-columns: 1.5fr 1fr 1fr;
     }
 
-    .page-hero {
-        padding: 70px 0 60px;
-    }
-
-    .page-hero h1,
-    .page-intro h1 {
-        font-size: 52px;
-    }
 }
 
 
@@ -1080,12 +1143,12 @@ img {
     }
 
     .page-hero {
-        padding: 60px 0 55px;
+        padding: 60px 0;
     }
 
-    .page-hero .container {
-        padding-left: 20px;
-        padding-right: 20px;
+    .page-hero-inner {
+        padding: 0 20px;
+        gap: 35px;
     }
 
     .page-hero h1,
@@ -1095,13 +1158,13 @@ img {
         letter-spacing: -1.5px;
     }
 
-    .page-intro-inner {
-        padding: 60px 20px 55px;
-    }
-
-    .page-intro-description,
     .page-intro {
         font-size: 15px;
+    }
+
+    .page-intro-inner {
+        padding: 60px 20px;
+        gap: 35px;
     }
 
     .stories-section,
@@ -1210,4 +1273,5 @@ img {
         gap: 8px;
     }
 }
+
 
