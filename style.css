@@ -873,6 +873,122 @@ img {
 }
 
 
+
+
+
+
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: #fff;
+    border: 1px solid #deddd7;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.contact-card > p:not(.story-category) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.contact-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.contact-note {
+    max-width: 850px;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: #eeece6;
+    border-left: 4px solid #b03a2e;
+}
+
+.contact-note h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.contact-note p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-note p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Contact page — mobile */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-card {
+        padding: 28px;
+    }
+
+    .contact-note {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 28px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 /* =========================================
    16. TABLET
 ========================================= */
