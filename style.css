@@ -36,9 +36,13 @@ img {
     display: block;
 }
 
-
-
-
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 
 /* =========================================
@@ -134,26 +138,65 @@ img {
 }
 
 
-
-
-
-
-
 /* =========================================
-   3. CONTAINER
+   3. TYPOGRAPHY / SMALL LABELS
 ========================================= */
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+.eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #b03a2e;
+    margin-bottom: 15px;
 }
 
 
 /* =========================================
-   4. HOMEPAGE HERO
+   4. BUTTONS
+========================================= */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    background: #171717;
+    color: white;
+
+    padding: 15px 23px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background: #b03a2e;
+    transform: translateY(-2px);
+}
+
+.button span {
+    font-size: 18px;
+}
+
+.button-light {
+    background: white;
+    color: #171717;
+}
+
+.button-light:hover {
+    background: #f1f0eb;
+    color: #171717;
+}
+
+
+/* =========================================
+   5. HOMEPAGE HERO
 ========================================= */
 
 .hero {
@@ -196,7 +239,7 @@ img {
 }
 
 .hero-content {
-    width: 1200px;
+    width: 1300px;
     max-width: calc(100% - 60px);
 
     margin: 0 auto;
@@ -205,17 +248,8 @@ img {
     z-index: 2;
 }
 
-.eyebrow {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #b03a2e;
-    margin-bottom: 16px;
-}
-
 .hero h1 {
-    font-size: clamp(50px, 7vw, 88px);
+    font-size: clamp(50px, 7vw, 82px);
     line-height: 0.98;
     letter-spacing: -4px;
     max-width: 800px;
@@ -233,49 +267,6 @@ img {
     color: #555;
     max-width: 570px;
     margin-bottom: 35px;
-}
-
-
-/* =========================================
-   5. BUTTONS
-========================================= */
-
-.button {
-    display: inline-flex;
-    align-items: center;
-    gap: 18px;
-
-    background: #171717;
-    color: white;
-
-    padding: 15px 23px;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-.button:hover {
-    background: #b03a2e;
-    transform: translateY(-2px);
-}
-
-.button span {
-    font-size: 18px;
-}
-
-.button-light {
-    background: white;
-    color: #171717;
-}
-
-.button-light:hover {
-    background: #f1f0eb;
-    color: #171717;
 }
 
 
@@ -344,23 +335,28 @@ img {
 ========================================= */
 
 .page-hero {
-    padding: 110px 0 90px;
+    padding: 85px 0 75px;
     border-bottom: 1px solid #deddd7;
+}
+
+.page-hero .container {
+    max-width: 1050px;
 }
 
 .page-hero h1 {
     max-width: 900px;
 
-    margin: 20px 0 30px;
+    margin: 18px 0 25px;
 
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(50px, 7vw, 90px);
-    line-height: 0.98;
-    letter-spacing: -4px;
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: normal;
+    line-height: 1.08;
+    letter-spacing: -2px;
 }
 
 .page-intro {
-    max-width: 650px;
+    max-width: 620px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -368,20 +364,32 @@ img {
     color: #555;
 }
 
+.page-hero .eyebrow {
+    font-size: 12px;
+    margin-bottom: 0;
+}
 
-/* Compatibility with older page-intro HTML */
+
+/* =========================================
+   8. OLDER PAGE-INTRO COMPATIBILITY
+========================================= */
 
 .page-intro-inner {
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
-    padding: 110px 30px 100px;
+    padding: 85px 30px 75px;
 }
 
 .page-intro h1 {
-    font-size: clamp(60px, 8vw, 105px);
-    line-height: 0.92;
-    letter-spacing: -5px;
-    margin-bottom: 35px;
+    max-width: 900px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: normal;
+    line-height: 1.08;
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
 }
 
 .page-intro h1 span {
@@ -389,7 +397,7 @@ img {
 }
 
 .page-intro-description {
-    max-width: 650px;
+    max-width: 620px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
@@ -403,7 +411,7 @@ img {
 
 
 /* =========================================
-   8. FEATURED STORY
+   9. FEATURED STORY
 ========================================= */
 
 .featured-section {
@@ -496,7 +504,7 @@ img {
 
 
 /* =========================================
-   9. STORY GRIDS
+   10. STORY GRIDS
 ========================================= */
 
 .story-grid {
@@ -511,7 +519,7 @@ img {
 
 
 /* =========================================
-   10. STORY CARDS
+   11. STORY CARDS
 ========================================= */
 
 .story-card {
@@ -616,7 +624,7 @@ img {
 
 
 /* =========================================
-   11. CATEGORY STORIES SECTION
+   12. CATEGORY STORIES SECTION
 ========================================= */
 
 .stories-section {
@@ -635,7 +643,7 @@ img {
 
 
 /* =========================================
-   12. TOPICS
+   13. TOPICS
 ========================================= */
 
 .topics-section {
@@ -686,7 +694,7 @@ img {
 
 
 /* =========================================
-   13. EDUCATIONAL NEWS
+   14. EDUCATIONAL NEWS
 ========================================= */
 
 .news-list {
@@ -756,7 +764,79 @@ img {
 
 
 /* =========================================
-   14. SUBMIT / CTA
+   15. CONTACT PAGE
+========================================= */
+
+.contact-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    background: #fff;
+    border: 1px solid #deddd7;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.contact-card > p:not(.story-category) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.contact-card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.contact-note {
+    max-width: 850px;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: #eeece6;
+    border-left: 4px solid #b03a2e;
+}
+
+.contact-note h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.contact-note p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-note p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   16. SUBMIT / CTA
 ========================================= */
 
 .submit-section {
@@ -804,7 +884,7 @@ img {
 
 
 /* =========================================
-   15. FOOTER
+   17. FOOTER
 ========================================= */
 
 .site-footer {
@@ -883,124 +963,8 @@ img {
 }
 
 
-
-
-
-
-
 /* =========================================
-   CONTACT PAGE
-========================================= */
-
-.contact-grid {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.contact-card {
-    background: #fff;
-    border: 1px solid #deddd7;
-    padding: 35px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-card h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
-    line-height: 1.2;
-    margin-bottom: 18px;
-}
-
-.contact-card > p:not(.story-category) {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666;
-    margin-bottom: 28px;
-}
-
-.contact-card .button {
-    align-self: flex-start;
-    margin-top: auto;
-}
-
-.contact-note {
-    max-width: 850px;
-    margin: 0 auto;
-
-    padding: 40px;
-
-    background: #eeece6;
-    border-left: 4px solid #b03a2e;
-}
-
-.contact-note h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 28px;
-    margin-bottom: 18px;
-}
-
-.contact-note p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.contact-note p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* Contact page — mobile */
-
-@media (max-width: 900px) {
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .contact-grid {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .contact-card {
-        padding: 28px;
-    }
-
-    .contact-note {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 28px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-/* =========================================
-   16. TABLET
+   18. TABLET
 ========================================= */
 
 @media (max-width: 900px) {
@@ -1036,18 +1000,27 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
     .footer-inner {
         grid-template-columns: 1.5fr 1fr 1fr;
     }
 
     .page-hero {
-        padding: 80px 0 70px;
+        padding: 70px 0 60px;
+    }
+
+    .page-hero h1,
+    .page-intro h1 {
+        font-size: 52px;
     }
 }
 
 
 /* =========================================
-   17. MOBILE
+   19. MOBILE
 ========================================= */
 
 @media (max-width: 600px) {
@@ -1107,21 +1080,23 @@ img {
     }
 
     .page-hero {
-        padding: 70px 0 60px;
+        padding: 60px 0 55px;
     }
 
-    .page-hero h1 {
-        font-size: 52px;
-        letter-spacing: -2.5px;
+    .page-hero .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-hero h1,
+    .page-intro h1 {
+        font-size: 42px;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
     }
 
     .page-intro-inner {
-        padding: 80px 20px 75px;
-    }
-
-    .page-intro h1 {
-        font-size: 60px;
-        letter-spacing: -3px;
+        padding: 60px 20px 55px;
     }
 
     .page-intro-description,
@@ -1192,6 +1167,21 @@ img {
         display: none;
     }
 
+    .contact-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-card {
+        padding: 28px;
+    }
+
+    .contact-note {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 28px;
+    }
+
     .submit-section {
         padding: 75px 0;
     }
@@ -1220,3 +1210,4 @@ img {
         gap: 8px;
     }
 }
+
