@@ -826,19 +826,31 @@ img {
 }
 
 .archive-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: bold;
+    line-height: 1.4;
 
     color: #171717;
 
-    transition: color 0.2s ease;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #171717;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .archive-link a:hover {
     color: #b03a2e;
+    border-color: #b03a2e;
+    transform: translateX(4px);
 }
-
 
 /* =========================================
    16. NEWS ARCHIVE PAGE
@@ -1668,14 +1680,15 @@ img {
         display: none;
     }
 
+.archive-link {
+    margin-top: 35px;
+    padding-top: 20px;
+}
 
-    /* Archive link */
-
-    .archive-link {
-        margin-top: 35px;
-        padding-top: 20px;
-    }
-
+.archive-link a {
+    font-size: 15px;
+    line-height: 1.5;
+}
 
     /* Archive page */
 
