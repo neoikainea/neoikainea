@@ -957,3 +957,19 @@ img {
 }
 
 
+
+
+
+/* =========================================
+   NEWS META
+   ========================================= */
+
+.news-meta {
+    margin: 18px 0 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #777;
+    letter-spacing: 0.04em;
+}
+
+
