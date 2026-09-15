@@ -1,4 +1,3 @@
-
 /* =========================================
    ΝΕΟΙ & ΝΕΑ
    Complete stylesheet
@@ -24,6 +23,7 @@ body {
     background: #f8f7f3;
     color: #171717;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
@@ -52,7 +52,6 @@ img {
 .site-header {
     background: #f8f7f3;
     border-bottom: 1px solid #deddd7;
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -982,7 +981,7 @@ img {
 /* Article header */
 
 .article-header {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 
     padding: 90px 30px 55px;
@@ -1001,7 +1000,7 @@ img {
 }
 
 .article-header h1 {
-    max-width: 900px;
+    max-width: 850px;
 
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(44px, 6vw, 76px);
@@ -1039,29 +1038,36 @@ img {
 }
 
 
-/* Main article image */
+/* =========================================
+   18. ARTICLE HERO IMAGE
+========================================= */
+
+/*
+   The article image is intentionally smaller
+   than a full-width banner.
+
+   Contributors can send ordinary phone/social
+   media photos. The website keeps their natural
+   proportions.
+*/
 
 .article-hero {
-    max-width: 900px;
-    margin: 0 auto 65px;
+    width: 100%;
+    max-width: 760px;
 
+    margin: 0 auto 55px;
     padding: 0 30px;
 }
 
 .article-hero-image {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-height: 460px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ddd9d0,
-            #c8c3b9
-        );
+    background: #dedbd3;
 
     color: #777;
 
@@ -1073,23 +1079,30 @@ img {
 }
 
 .article-hero-image img {
+    display: block;
+
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+
+    max-height: 460px;
+
+    object-fit: contain;
 }
 
 .article-caption {
     margin-top: 10px;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.5;
 
-    color: #777;
+    color: #888;
 }
 
 
-/* Article body */
+/* =========================================
+   19. ARTICLE BODY
+========================================= */
 
 .article-body {
     max-width: 760px;
@@ -1157,7 +1170,9 @@ img {
 }
 
 
-/* Article source */
+/* =========================================
+   20. ARTICLE SOURCE
+========================================= */
 
 .article-source {
     max-width: 760px;
@@ -1180,41 +1195,98 @@ img {
 }
 
 
-/* Back to category/archive */
+/* =========================================
+   21. ARTICLE BACK LINK
+========================================= */
 
 .article-back {
     max-width: 760px;
     margin: 0 auto;
 
-    padding: 0 30px 80px;
+    padding: 0 30px 70px;
 }
 
 .article-back a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.4;
 
     color: #171717;
 
-    padding-bottom: 5px;
+    padding: 9px 0;
+
     border-bottom: 2px solid #171717;
 
     transition:
         color 0.2s ease,
-        border-color 0.2s ease;
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .article-back a:hover {
     color: #b03a2e;
     border-color: #b03a2e;
+    transform: translateX(-3px);
 }
 
 
 /* =========================================
-   18. CONTACT PAGE
+   22. INLINE ARTICLE IMAGE
+========================================= */
+
+.article-inline-image {
+    margin: 50px 0;
+}
+
+.article-inline-image .image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e9e8e2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #777;
+}
+
+.article-inline-image figcaption {
+    margin-top: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #777;
+}
+
+
+/* =========================================
+   23. RELATED STORIES
+========================================= */
+
+/*
+   Related stories are currently disabled.
+   If old HTML remains on an article page,
+   this prevents it from appearing.
+*/
+
+.related-section {
+    display: none;
+}
+
+
+/* =========================================
+   24. CONTACT PAGE
 ========================================= */
 
 .contact-grid {
@@ -1286,7 +1358,7 @@ img {
 
 
 /* =========================================
-   19. SUBMIT / CTA
+   25. SUBMIT / CTA
 ========================================= */
 
 .submit-section {
@@ -1334,7 +1406,7 @@ img {
 
 
 /* =========================================
-   20. FOOTER
+   26. FOOTER
 ========================================= */
 
 .site-footer {
@@ -1414,7 +1486,7 @@ img {
 
 
 /* =========================================
-   21. TABLET
+   27. TABLET
 ========================================= */
 
 @media (max-width: 900px) {
@@ -1492,18 +1564,17 @@ img {
     /* Article */
 
     .article-header {
-        max-width: 900px;
+        max-width: 850px;
     }
 
     .article-hero {
-        max-width: 900px;
+        max-width: 760px;
     }
-
 }
 
 
 /* =========================================
-   22. MOBILE
+   28. MOBILE
 ========================================= */
 
 @media (max-width: 600px) {
@@ -1727,15 +1798,23 @@ img {
         line-height: 1.5;
     }
 
+
+    /* Smaller article image */
+
     .article-hero {
-        max-width: 100%;
+        max-width: 760px;
         padding: 0 20px;
         margin-bottom: 45px;
     }
 
     .article-hero-image {
-        aspect-ratio: 4 / 3;
+        max-height: 360px;
     }
+
+    .article-hero-image img {
+        max-height: 360px;
+    }
+
 
     .article-body {
         padding: 0 20px 70px;
@@ -1769,12 +1848,16 @@ img {
         padding: 20px 0;
     }
 
+
+    /* Return link */
+
     .article-back {
         padding: 0 20px 55px;
     }
 
     .article-back a {
-        font-size: 14px;
+        font-size: 13px;
+        padding: 8px 0;
     }
 
 
