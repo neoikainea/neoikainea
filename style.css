@@ -494,6 +494,14 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
+
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .image-placeholder {
@@ -612,6 +620,13 @@ img {
     letter-spacing: 2px;
 
     overflow: hidden;
+}
+
+.card-image img,
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -1042,15 +1057,6 @@ img {
    18. ARTICLE HERO IMAGE
 ========================================= */
 
-/*
-   The article image is intentionally smaller
-   than a full-width banner.
-
-   Contributors can send ordinary phone/social
-   media photos. The website keeps their natural
-   proportions.
-*/
-
 .article-hero {
     width: 100%;
     max-width: 760px;
@@ -1180,9 +1186,13 @@ img {
 
 .article-source {
     max-width: 760px;
-    margin: -50px auto 90px;
 
-    padding: 25px 30px;
+    /* FIXED: prevents source from overlapping
+       the final paragraph */
+
+    margin: 50px auto 90px;
+
+    padding: 20px 0;
 
     border-top: 1px solid #deddd7;
     border-bottom: 1px solid #deddd7;
@@ -1277,12 +1287,6 @@ img {
 /* =========================================
    23. RELATED STORIES
 ========================================= */
-
-/*
-   Related stories are currently disabled.
-   If old HTML remains on an article page,
-   this prevents it from appearing.
-*/
 
 .related-section {
     display: none;
@@ -1853,8 +1857,11 @@ img {
         padding: 22px;
     }
 
+
+    /* Article source */
+
     .article-source {
-        margin: -20px 20px 65px;
+        margin: 40px 0 65px;
         padding: 20px 0;
     }
 
