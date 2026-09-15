@@ -1089,14 +1089,18 @@ img {
     object-fit: contain;
 }
 
+
+/* Article image caption */
+
 .article-caption {
-    margin-top: 10px;
+    margin-top: 12px;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.5;
 
-    color: #888;
+    color: #666;
+    font-style: italic;
 }
 
 
@@ -1264,7 +1268,7 @@ img {
     margin-top: 10px;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.5;
     color: #777;
 }
@@ -1799,7 +1803,7 @@ img {
     }
 
 
-    /* Smaller article image */
+    /* Article image */
 
     .article-hero {
         max-width: 760px;
@@ -1813,6 +1817,12 @@ img {
 
     .article-hero-image img {
         max-height: 360px;
+    }
+
+    .article-caption {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.5;
     }
 
 
@@ -1912,4 +1922,3 @@ img {
         gap: 8px;
     }
 }
-
